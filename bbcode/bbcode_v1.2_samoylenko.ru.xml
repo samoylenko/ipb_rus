@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bbcodeexport>
+  <bbcodegroup>
+    <bbcode>
+      <bbcode_id>1</bbcode_id>
+      <bbcode_title>Вернуться к сообщению</bbcode_title>
+      <bbcode_desc>Этот тег отображает небольшое изображение со ссылкой, которая ведет обратно к сообщению - используется при цитировании сообщений на сайте. По умочанию, открывается с том же окне.</bbcode_desc>
+      <bbcode_tag>snapback</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[snapback]100[/snapback]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>2</bbcode_id>
+      <bbcode_title>Справа</bbcode_title>
+      <bbcode_desc>Выравнивает содержимое по правой границе сообщения</bbcode_desc>
+      <bbcode_tag>right</bbcode_tag>
+      <bbcode_replace><![CDATA[<span class='bbc_right'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[right]Какой-нибудь текст[/right]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>3</bbcode_id>
+      <bbcode_title>Слева</bbcode_title>
+      <bbcode_desc>Выравнивает содержимое по левой границе сообщения</bbcode_desc>
+      <bbcode_tag>left</bbcode_tag>
+      <bbcode_replace><![CDATA[<span class='bbc_left'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[left]Текст, выравненный по левому краю[/left]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>4</bbcode_id>
+      <bbcode_title>Центр</bbcode_title>
+      <bbcode_desc>Центрирует содержимое по центру области вывода.</bbcode_desc>
+      <bbcode_tag>center</bbcode_tag>
+      <bbcode_replace><![CDATA[<span class='bbc_center'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[center]Текст по центру[/center]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text>Enter content to be centered</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>5</bbcode_id>
+      <bbcode_title>Ссылка на тему</bbcode_title>
+      <bbcode_desc>Этот тег предоставляет легкий способ создать ссылку на тему</bbcode_desc>
+      <bbcode_tag>topic</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='{base_url}showtopic={option}' class="bbc_url">{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[topic=1]Нажми меня![/topic]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text>Введите ID темы</bbcode_menu_option_text>
+      <bbcode_menu_content_text>Введите название для этой ссылки</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>6</bbcode_id>
+      <bbcode_title>Ссылка на сообщение</bbcode_title>
+      <bbcode_desc>Этот тег предоставляет легкий способ создать ссылку на сообщение.</bbcode_desc>
+      <bbcode_tag>post</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='{base_url}act=findpost&amp;pid={option}' class="bbc_url">{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[post=1]Нажми меня![/post]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text>Введите ID сообщения</bbcode_menu_option_text>
+      <bbcode_menu_content_text>Введите название для этой ссылки</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>7</bbcode_id>
+      <bbcode_title>Скрытый текст</bbcode_title>
+      <bbcode_desc>Скрытый текст</bbcode_desc>
+      <bbcode_tag>spoiler</bbcode_tag>
+      <bbcode_replace><![CDATA[<div class='bbc_spoiler'>
+	<span class='spoiler_title'>Скрытый текст</span> <input type='button' class='bbc_spoiler_show' value='Показать' />
+	<div class='bbc_spoiler_wrapper'><div class='bbc_spoiler_content' style="display:none;">{content}</div></div>
+</div>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[spoiler]Скрытый текст[/spoiler]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text>Введите скрытый текст</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>8</bbcode_id>
+      <bbcode_title>Акроним</bbcode_title>
+      <bbcode_desc>Позволяет Вам создавать акронимы, которые будут показывать описание при наведении мышки</bbcode_desc>
+      <bbcode_tag>acronym</bbcode_tag>
+      <bbcode_replace><![CDATA[<acronym title='{option}' class='bbc'>{content}</acronym>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[acronym='Laugh Out Loud']lol[/acronym]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text>Введите расшифровку (пример: Laugh Out Loud)</bbcode_menu_option_text>
+      <bbcode_menu_content_text>Введите акроним (пример: lol)</bbcode_menu_content_text>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>9</bbcode_id>
+      <bbcode_title>Жирный текст</bbcode_title>
+      <bbcode_desc>Делает текст жирным</bbcode_desc>
+      <bbcode_tag>b</bbcode_tag>
+      <bbcode_replace><![CDATA[<strong class='bbc'>{content}</strong>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[b]Это жирный текст[/b]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>10</bbcode_id>
+      <bbcode_title>Наклонный текст</bbcode_title>
+      <bbcode_desc>Делает текст наклонным</bbcode_desc>
+      <bbcode_tag>i</bbcode_tag>
+      <bbcode_replace><![CDATA[<em class='bbc'>{content}</em>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[i]Это наклонный текст[/i]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>11</bbcode_id>
+      <bbcode_title>Подчеркнутый текст</bbcode_title>
+      <bbcode_desc>Делает текст подчеркнутым</bbcode_desc>
+      <bbcode_tag>u</bbcode_tag>
+      <bbcode_replace><![CDATA[<span class='bbc_underline'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[u]Это подчеркнутый текст[/u]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>12</bbcode_id>
+      <bbcode_title>Горизонтальный разделитель</bbcode_title>
+      <bbcode_desc>Добавляет горизонтальный разделитель для разбивки текста</bbcode_desc>
+      <bbcode_tag>hr</bbcode_tag>
+      <bbcode_replace><![CDATA[<hr class='bbc' />]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[hr]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>1</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>13</bbcode_id>
+      <bbcode_title>Код</bbcode_title>
+      <bbcode_desc>Позволяет Вам ввести обычный код</bbcode_desc>
+      <bbcode_tag>code</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[code]$text = 'какой-нибудь длинный код';[/code]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases>codebox</bbcode_aliases>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>14</bbcode_id>
+      <bbcode_title>Код PHP</bbcode_title>
+      <bbcode_desc>Позволяет Вам ввести код PHP в отформатированной/с подсветкой синтаксиса области</bbcode_desc>
+      <bbcode_tag>php</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[php]$variable = true;
+
+print_r($variable);[/php]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>15</bbcode_id>
+      <bbcode_title>Код HTML</bbcode_title>
+      <bbcode_desc>Позволяет Вам ввести отформатированный/с подсветкой синтаксиса код HTML</bbcode_desc>
+      <bbcode_tag>html</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint lang-html'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[html]<div class='outer'>
+  <p>Hello World</p>
+ </div>[/html]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>16</bbcode_id>
+      <bbcode_title>Код SQL</bbcode_title>
+      <bbcode_desc>Позволяет Вам ввести отформатированный/с подсветкой синтаксиса код SQL</bbcode_desc>
+      <bbcode_tag>sql</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint lang-sql'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[sql]SELECT p.*, t.* FROM posts p LEFT JOIN topics t ON t.tid=p.topic_id WHERE t.tid=7[/sql]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>17</bbcode_id>
+      <bbcode_title>Код XML</bbcode_title>
+      <bbcode_desc>Позволяет Вам ввести отформатированный/с подсветкой синтаксиса код XML</bbcode_desc>
+      <bbcode_tag>xml</bbcode_tag>
+      <bbcode_replace><![CDATA[<pre class='prettyprint lang-xml'>
+{content}
+</pre>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[xml]<outer>
+ <inner>
+  <tag param='1'>Test</tag>
+ </inner>
+</outer>[/xml]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>18</bbcode_id>
+      <bbcode_title>URL</bbcode_title>
+      <bbcode_desc>Тег стандартной HTML ссылки</bbcode_desc>
+      <bbcode_tag>url</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[url=http://google.com]Google[/url]
+
+[url]http://mysite.com[/url]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>1</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>19</bbcode_id>
+      <bbcode_title>Изображение</bbcode_title>
+      <bbcode_desc>Отображает картинки по ссылке</bbcode_desc>
+      <bbcode_tag>img</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[img]http://www.google.com/intl/en_ALL/images/logo.gif[/img]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>20</bbcode_id>
+      <bbcode_title>Цитата</bbcode_title>
+      <bbcode_desc>Отображает цитируемый текст внутри сообщения</bbcode_desc>
+      <bbcode_tag>quote</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[quote]Здесь - общий текст[/quote]
+
+[quote name='Username' date='Jun 30 2008, 10:39 AM' post='1735291']Здесь - цитирование сообщения[/quote]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>21</bbcode_id>
+      <bbcode_title>Отступ</bbcode_title>
+      <bbcode_desc>Смещает текст на несколько пробелов от левой границы публикации</bbcode_desc>
+      <bbcode_tag>indent</bbcode_tag>
+      <bbcode_replace><![CDATA[<div class='bbc_indent'>{content}</div>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[indent]Выделяем этот текст при помощи отступа[/indent]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>22</bbcode_id>
+      <bbcode_title>Списки</bbcode_title>
+      <bbcode_desc>Создать скиски HTML. Поддерживает многоуровневые списки, а так же различные типы маркеров списков.</bbcode_desc>
+      <bbcode_tag>list</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[list][*]Неупорядоченный список
+[/list]
+
+[list=1][*]Упорядоченный список
+[/list]
+
+[list=A][*]Создать различные типы маркеров (Вы можете использовать a, A, i, I и 1)
+[list][*]Это - многоуровневый..
+[/list]
+[/list]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>23</bbcode_id>
+      <bbcode_title>Зачеркнутый</bbcode_title>
+      <bbcode_desc>Отображает зачеркнутый текст</bbcode_desc>
+      <bbcode_tag>strike</bbcode_tag>
+      <bbcode_replace><![CDATA[<del class='bbc'>{content}</del>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[strike]Зачеркнутый текст[/strike]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases>s</bbcode_aliases>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>24</bbcode_id>
+      <bbcode_title>Нижний индекс</bbcode_title>
+      <bbcode_desc>Отображает текст в виде нижнего индекса</bbcode_desc>
+      <bbcode_tag>sub</bbcode_tag>
+      <bbcode_replace><![CDATA[<sub class='bbc'>{content}</sub>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[Формула углекислого газа - CO[sub]2[/sub]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>25</bbcode_id>
+      <bbcode_title>Верхний индекс</bbcode_title>
+      <bbcode_desc>Отображает текст в виде верхнего индекса</bbcode_desc>
+      <bbcode_tag>sup</bbcode_tag>
+      <bbcode_replace><![CDATA[<sup class='bbc'>{content}</sup>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[Математическая формула "икс в квадрате" выглядит так: x[sup]2[/sup]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>26</bbcode_id>
+      <bbcode_title>Адрес e-mail</bbcode_title>
+      <bbcode_desc>Форматирует адрес e-mail как ссылку mailto</bbcode_desc>
+      <bbcode_tag>email</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='mailto:{option}' title='{text.bbc_email}' class='bbc_email'>{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[Пожалуйста, напишите [email=admin@mysite.com]администратору[/email]
+
+Мой адрес e-mail - [email]my@emailaddress.com[/email]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>1</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>27</bbcode_id>
+      <bbcode_title>Цвет фона</bbcode_title>
+      <bbcode_desc>Добавляет цветной фон к тексту</bbcode_desc>
+      <bbcode_tag>background</bbcode_tag>
+      <bbcode_replace><![CDATA[<span style='background-color: {option}'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[background=red]Текст на красном фоне[/background]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>28</bbcode_id>
+      <bbcode_title>Цвет текста</bbcode_title>
+      <bbcode_desc>Окрашивает цвет в различные цвета</bbcode_desc>
+      <bbcode_tag>color</bbcode_tag>
+      <bbcode_replace><![CDATA[<span style='color: {option}'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[color=blue]Этот текст - синий[/color]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>29</bbcode_id>
+      <bbcode_title>Размер</bbcode_title>
+      <bbcode_desc>Увеличивает или уменьшает шрифт текста</bbcode_desc>
+      <bbcode_tag>size</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[size=4]Это - увеличенный текст[/size]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>30</bbcode_id>
+      <bbcode_title>Шрифт</bbcode_title>
+      <bbcode_desc>Применяет к тексту различные шрифты</bbcode_desc>
+      <bbcode_tag>font</bbcode_tag>
+      <bbcode_replace><![CDATA[<span style='font-family: {option}'>{content}</span>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[font=Tahoma]Этот текст использует шрифт Tahoma[/font]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>31</bbcode_id>
+      <bbcode_title>Пользователь</bbcode_title>
+      <bbcode_desc>Автоматически генерирует ссылку на профиль пользователя по предоставленному имени</bbcode_desc>
+      <bbcode_tag>member</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[member=admin] управляет этим сайтом.]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>1</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>32</bbcode_id>
+      <bbcode_title>Мультимедиа</bbcode_title>
+      <bbcode_desc>Позволяет пользователю размещать мультимедиа с определенных известных медиасайтов</bbcode_desc>
+      <bbcode_tag>media</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[media]http://www.youtube.com/watch?v=YqqLx-2vUr0[/media]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>defaults.php</bbcode_php_plugin>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases>video,movie,flash,blogmedia,youtube</bbcode_aliases>
+      <bbcode_optional_option>1</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>33</bbcode_id>
+      <bbcode_title>Выдержка из записи блога</bbcode_title>
+      <bbcode_desc>Позволяет пользователям определять выдержку из записи. Только эта область записи будет отображена на главной странице блога и в ленте RSS.</bbcode_desc>
+      <bbcode_tag>extract</bbcode_tag>
+      <bbcode_replace><![CDATA[<!--blog.extract.start-->{content}<!--blog.extract.end-->]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[extract]Это - образец![/extract]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>34</bbcode_id>
+      <bbcode_title>Ссылка на блог</bbcode_title>
+      <bbcode_desc>Этот тег предоставляет легкий способ сделать ссылку на блог.</bbcode_desc>
+      <bbcode_tag>blog</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='{base_url}app=blog&amp;showblog={option}' class="bbc_url">{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[blog=100]Нажми меня![/blog]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>35</bbcode_id>
+      <bbcode_title>Ссылка на запись в блоге</bbcode_title>
+      <bbcode_desc>Этот тег предоставляет легкий способ сделать ссылку на запись в блоге.</bbcode_desc>
+      <bbcode_tag>entry</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='{base_url}app=blog&amp;module=display&amp;section=blog&amp;showentry={option}' class="bbc_url">{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[entry=100]Нажми меня![/entry]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>36</bbcode_id>
+      <bbcode_title>Twitter</bbcode_title>
+      <bbcode_desc>Тег для создания ссылки на профиль пользователя в Twitter</bbcode_desc>
+      <bbcode_tag>twitter</bbcode_tag>
+      <bbcode_replace><![CDATA[<a href='http://www.twitter.com/{content}' class="bbc_url">@{content}</a>]]></bbcode_replace>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[[twitter]userName[/twitter]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin/>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image>twitter.png</bbcode_image>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>core</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>37</bbcode_id>
+      <bbcode_title>Многостраничные статьи</bbcode_title>
+      <bbcode_desc><![CDATA[Этот тег может быть использован для создания многостраничных статей. Ссылки на страницы автоматически добавляются в зависимости от количества повторов этого тега, а содержимое скрыто до тех пор, пока Вы не достигли указанную "страницу".]]></bbcode_desc>
+      <bbcode_tag>page</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>0</bbcode_useoption>
+      <bbcode_example><![CDATA[содержимое 1
+[page]
+содержимое 2
+[page]
+содержимое 3]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>1</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>ccs_database</bbcode_sections>
+      <bbcode_php_plugin>ccs.php</bbcode_php_plugin>
+      <bbcode_no_parsing>0</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>ccs</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+    <bbcode>
+      <bbcode_id>38</bbcode_id>
+      <bbcode_title>Галерея</bbcode_title>
+      <bbcode_desc>Тег BBcode для вставки содержимого галереи в сообщения.</bbcode_desc>
+      <bbcode_tag>gallery</bbcode_tag>
+      <bbcode_replace/>
+      <bbcode_useoption>1</bbcode_useoption>
+      <bbcode_example><![CDATA[[gallery type="album"]123[/gallery]]]></bbcode_example>
+      <bbcode_switch_option>0</bbcode_switch_option>
+      <bbcode_menu_option_text/>
+      <bbcode_menu_content_text/>
+      <bbcode_single_tag>0</bbcode_single_tag>
+      <bbcode_groups>all</bbcode_groups>
+      <bbcode_sections>all</bbcode_sections>
+      <bbcode_php_plugin>gallery.php</bbcode_php_plugin>
+      <bbcode_no_parsing>1</bbcode_no_parsing>
+      <bbcode_protected>0</bbcode_protected>
+      <bbcode_aliases/>
+      <bbcode_optional_option>0</bbcode_optional_option>
+      <bbcode_image/>
+      <bbcode_strip_search>0</bbcode_strip_search>
+      <bbcode_app>gallery</bbcode_app>
+      <bbcode_custom_regex/>
+    </bbcode>
+  </bbcodegroup>
+</bbcodeexport>
